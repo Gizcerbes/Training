@@ -42,6 +42,10 @@ android {
 	}
 }
 
+tasks.register("version"){
+	println(android.defaultConfig.versionName)
+}
+
 dependencies {
 
 	androidX()
