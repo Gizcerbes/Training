@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/navigationFragment2">
+
+	<fragment
+		android:id="@+id/navigationFragment2"
+		android:name="com.uogames.innowise.ui.navigation.NavigationFragment"
+		tools:layout="@layout/fragment_navigation"
+		android:label="NavigationFragment" />
+
+	<fragment
+		android:id="@+id/usersFragment"
+		android:name="com.uogames.innowise.ui.fragmentUsers.UsersFragment"
+		android:label="UsersFragment"
+		tools:layout="@layout/fragment_users" />
+
+	<fragment
+		android:id="@+id/profileFragment"
+		android:name="com.uogames.innowise.ui.fragmentProfile.ProfileFragment"
+		android:label="ProfileFragment"
+		tools:layout="@layout/fragment_profile" />
+
+	<fragment
+		tools:layout="@layout/fragment_centring"
+		android:id="@+id/centringFragment"
+		android:name="com.uogames.innowise.ui.fragmentCentring.CentringFragment"
+		android:label="FragmentCentring" />
+	<fragment
+		android:id="@+id/ZOrderFragment"
+		android:name="com.uogames.innowise.ui.fragmentZOrder.ZOrderFragment"
+		android:label="ZOrderFragment" />
+
+	<fragment
+		android:id="@+id/colorimeterFragment"
+		android:name="com.uogames.innowise.ui.fragmnetColorimeter.ColorimeterFragment"
+		android:label="ColorimeterFragment" />
+
+
+	<fragment
+		android:id="@+id/firstAnimationFragment"
+		android:name="com.uogames.innowise.ui.fragmentAnimation.FirstAnimationFragment"
+		android:label="FirstAnimationFragment" />
+	<fragment
+		android:id="@+id/secondAnimationFragment"
+		android:name="com.uogames.innowise.ui.fragmentAnimation.SecondAnimationFragment"
+		android:label="SecondAnimationFragment" />
+	<fragment
+		android:id="@+id/thirdAnimationFragment"
+		android:name="com.uogames.innowise.ui.fragmentAnimation.ThirdAnimationFragment"
+		android:label="ThirdAnimationFragment" />
+	<fragment
+		android:id="@+id/buttonAndScrollFragment"
+		android:name="com.uogames.innowise.ui.fragmentButtonAndScroll.ButtonAndScrollFragment"
+		android:label="ButtonAndScrollFragment" />
+	<fragment
+		android:id="@+id/coloredFragment"
+		android:name="com.uogames.innowise.ui.fragmentColored.ColoredFragment"
+		android:label="ColoredFragment" />
+	<fragment
+		android:id="@+id/customProgressBarFragment"
+		android:name="com.uogames.innowise.ui.fragmentCustomProgressbar.CustomProgressBarFragment"
+		android:label="CustomProgressBarFragment" />
+	<fragment
+		android:id="@+id/bottomFragment"
+		android:name="com.uogames.innowise.ui.fragmentBottom.BottomFragment"
+		android:label="BottomFragment" />
+	<fragment
+		android:id="@+id/counterFragment"
+		android:name="com.uogames.innowise.ui.fragmentCounter.CounterFragment"
+		android:label="CounterFragment" />
+	<fragment
+		android:id="@+id/updateCounterFragment"
+		android:name="com.uogames.innowise.ui.fragmentCounter.UpdateCounterFragment"
+		android:label="UpdateCounterFragment" />
+	<fragment
+		android:id="@+id/multithreadingFragment"
+		android:name="com.uogames.innowise.ui.fragmentMultithread.MultithreadingFragment"
+		android:label="MultithreadingFragment" />
+	<fragment
+		android:id="@+id/portFragment"
+		android:name="com.uogames.innowise.ui.fragmentPort.PortFragment"
+		android:label="PortFragment" />
+	<fragment
+		android:id="@+id/raceFragment"
+		android:name="com.uogames.innowise.ui.fragmentRace.RaceFragment"
+		android:label="RaceFragment" />
+
+
+</navigation>

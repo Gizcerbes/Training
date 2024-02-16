@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:foreground="?attr/selectableItemBackground"
+	android:layout_width="match_parent"
+	android:layout_height="100dp">
+
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/mcv_avatar"
+		android:layout_width="60dp"
+		android:layout_height="60dp"
+		android:layout_marginStart="5dp"
+		app:cardCornerRadius="30dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<ImageView
+			android:id="@+id/iv_avatar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop" />
+
+	</com.google.android.material.card.MaterialCardView>
+
+	<LinearLayout
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:gravity="start"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="@id/mcv_avatar"
+		app:layout_constraintEnd_toStartOf="@id/btn_follow"
+		app:layout_constraintStart_toEndOf="@id/mcv_avatar"
+		app:layout_constraintTop_toTopOf="@id/mcv_avatar">
+
+		<TextView
+			android:id="@+id/tv_username"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="12dp"
+			android:textAppearance="?attr/textAppearanceHeadlineSmall"
+			tools:text="Izabella Zhang" />
+
+		<TextView
+			android:id="@+id/tv_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="12dp"
+			android:textAppearance="?attr/textAppearanceBodyMedium"
+			tools:text="6 Days ago" />
+
+	</LinearLayout>
+
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/btn_follow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginEnd="5dp"
+		app:cardCornerRadius="100dp"
+		app:layout_constraintBottom_toBottomOf="@id/mcv_avatar"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="@id/mcv_avatar"
+		app:strokeWidth="0dp">
+
+		<LinearLayout
+			android:id="@+id/ll_follow"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/gradient_button"
+			android:clickable="true"
+			android:foreground="?attr/selectableItemBackground"
+			android:gravity="center"
+			android:padding="10dp"
+			android:paddingStart="20dp"
+			android:paddingEnd="20dp"
+			app:layout_constraintBottom_toBottomOf="@id/mcv_avatar"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@id/mcv_avatar">
+
+			<ImageView
+				android:layout_width="16sp"
+				android:layout_height="16sp"
+				android:layout_marginEnd="3dp"
+				android:src="@drawable/baseline_add_24"
+				app:tint="@color/white" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/follow"
+				android:textAppearance="?attr/textAppearanceBodyLarge"
+				android:textColor="@color/white" />
+
+		</LinearLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+
+
+	<com.google.android.material.divider.MaterialDivider
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="black">#FF000000</color>
+	<color name="black_75">#BF000000</color>
+	<color name="white">#FFFFFFFF</color>
+	<color name="white_75">#BFFFFFFF</color>
+
+	<color name="purple">#673AB7</color>
+	<color name="blue">#2196F3</color>
+	<color name="rad">#FF0000</color>
+	<color name="yellow">#FFC107</color>
+	<color name="green">#4CAF50</color>
+	<color name="transparent">#00000000</color>
+
+	<color name="orange_first">#F66B1D</color>
+	<color name="orange_second">#F96161</color>
+
+	<color name="sea">#31888F</color>
+	<color name="sea_50">#8031888F</color>
+
+
+
+
+</resources>

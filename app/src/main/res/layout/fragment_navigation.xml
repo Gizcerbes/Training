@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<androidx.core.widget.NestedScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<GridLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:columnCount="2">
+
+			<Button
+				android:id="@+id/btn_centring"
+				android:layout_columnWeight="1"
+				android:text="@string/open_centering" />
+
+			<Button
+				android:id="@+id/btn_and_scroll"
+				android:layout_columnWeight="1"
+				android:text="@string/open_scroll" />
+
+
+			<Button
+				android:id="@+id/btn_zorder"
+				android:layout_columnWeight="1"
+				android:text="@string/open_z_order" />
+
+			<Button
+				android:id="@+id/btn_colorimetr"
+				android:layout_columnWeight="1"
+				android:text="@string/open_colorimeter" />
+
+			<Button
+				android:id="@+id/btn_users"
+				android:layout_columnWeight="1"
+				android:text="@string/open_users" />
+
+			<Button
+				android:id="@+id/btn_animation_first"
+				android:layout_columnWeight="1"
+				android:text="@string/open_animation_1" />
+
+			<Button
+				android:id="@+id/btn_animation_second"
+				android:layout_columnWeight="1"
+				android:text="@string/open_animation_2" />
+
+			<Button
+				android:id="@+id/btn_animation_third"
+				android:layout_columnWeight="1"
+				android:text="@string/open_animation_3" />
+
+			<Button
+				android:id="@+id/btn_colored_view"
+				android:layout_columnWeight="1"
+				android:text="@string/colored_view" />
+
+			<Button
+				android:id="@+id/btn_progress_bar"
+				android:layout_columnWeight="1"
+				android:text="@string/custom_progress" />
+
+			<Button
+				android:id="@+id/btn_bottom"
+				android:layout_columnWeight="1"
+				android:text="@string/open_bottom" />
+
+			<Button
+				android:id="@+id/btn_counter"
+				android:layout_columnWeight="1"
+				android:text="@string/open_counter" />
+
+			<Button
+				android:id="@+id/btn_update_counter"
+				android:layout_columnWeight="1"
+				android:text="@string/update_counter" />
+
+			<Button
+				android:id="@+id/btn_multithreading"
+				android:layout_columnWeight="1"
+				android:text="@string/multithreading" />
+
+			<Button
+				android:id="@+id/btn_pier"
+				android:layout_columnWeight="1"
+				android:text="@string/piers" />
+
+			<Button
+				android:id="@+id/btn_race"
+				android:layout_columnWeight="1"
+				android:text="@string/race" />
+
+		</GridLayout>
+
+	</androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

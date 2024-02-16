@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	app:contentPadding="16dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/iv_type"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:src="@drawable/local_shipping_24px" />
+
+
+			<TextView
+				android:id="@+id/tv_transport_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="7dp"
+				android:layout_marginEnd="7dp"
+				android:gravity="center"
+				android:text="@string/truck"
+				android:textAppearance="?attr/textAppearanceBodyLarge" />
+
+			<com.google.android.material.progressindicator.LinearProgressIndicator
+				android:id="@+id/lpi_progress"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:text="@string/number_id"
+				android:textAppearance="?attr/textAppearanceBodySmall" />
+
+			<TextView
+				android:id="@+id/tv_number"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="70" />
+
+		</LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/ll_speed"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:text="@string/speed"
+				android:textAppearance="?attr/textAppearanceBodySmall" />
+
+			<TextView
+				android:id="@+id/tv_max_speed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="70" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_puncture_risk"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:text="@string/puncture_risk"
+				android:textAppearance="?attr/textAppearanceBodySmall" />
+
+			<TextView
+				android:id="@+id/tv_picture_risk"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="30%" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_extra"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/label_extra"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="Extra:" />
+
+			<TextView
+				android:id="@+id/tv_extra"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="5" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:text="@string/status"
+				android:textAppearance="?attr/textAppearanceBodySmall" />
+
+			<TextView
+				android:id="@+id/tv_status"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="run" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_path"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="7dp"
+				android:text="@string/path"
+				android:textAppearance="?attr/textAppearanceBodySmall" />
+
+			<TextView
+				android:id="@+id/tv_path"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="?attr/textAppearanceBodySmall"
+				tools:text="80" />
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

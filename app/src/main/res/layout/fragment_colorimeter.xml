@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<LinearLayout
+		android:id="@+id/box"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintWidth_percent="0.8"
+		android:background="@drawable/stroke_first"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		tools:ignore="Orientation" />
+
+	<LinearLayout
+		android:layout_margin="1dp"
+		app:layout_constraintTop_toTopOf="@id/box"
+		app:layout_constraintStart_toStartOf="@id/box"
+		app:layout_constraintWidth_percent="0.1"
+		android:background="@drawable/stroke_second"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"/>
+
+	<LinearLayout
+		app:layout_constraintTop_toTopOf="@id/box"
+		app:layout_constraintEnd_toEndOf="@id/box"
+		app:layout_constraintWidth_percent="0.1"
+		android:background="@drawable/stroke_third"
+		android:layout_margin="1dp"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"/>
+
+	<LinearLayout
+		app:layout_constraintTop_toTopOf="@id/box"
+		app:layout_constraintEnd_toEndOf="@id/box"
+		app:layout_constraintWidth_percent="0.05"
+		android:background="@drawable/stroke_fourth"
+		android:layout_margin="1dp"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"/>
+
+	<LinearLayout
+		app:layout_constraintBottom_toBottomOf="@id/box"
+		app:layout_constraintStart_toStartOf="@id/box"
+		app:layout_constraintWidth_percent="0.1"
+		android:background="@drawable/stroke_fiveth"
+		android:layout_margin="1dp"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"/>
+
+	<LinearLayout
+		app:layout_constraintBottom_toBottomOf="@id/box"
+		app:layout_constraintStart_toStartOf="@id/box"
+		app:layout_constraintEnd_toEndOf="@id/box"
+		app:layout_constraintTop_toTopOf="@id/box"
+		app:layout_constraintWidth_percent="0.1"
+		android:background="@drawable/stroke_sixth"
+		app:layout_constraintDimensionRatio="1:1"
+		android:layout_width="0dp"
+		android:layout_height="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

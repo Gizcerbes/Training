@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/users_first"
+		android:icon="@drawable/baseline_emoji_people_24"
+		android:title="@string/users" />
+
+	<item
+		android:id="@+id/users_second"
+		android:icon="@drawable/baseline_elderly_24"
+		android:title="@string/users" />
+
+	<item android:id="@+id/roles"
+		android:icon="@drawable/ic_launcher_foreground"
+		android:title="@string/roles"
+		/>
+
+	<item android:id="@+id/asym"
+		android:icon="@drawable/more_horiz_24px"
+		android:title="@string/asym"
+		/>
+
+	<item android:id="@+id/loading"
+		android:icon="@drawable/agender_24px"
+		android:title="@string/loading"
+		/>
+
+
+</menu>

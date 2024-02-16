@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<ImageView
+		android:id="@+id/iv_post_image"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:scaleType="centerCrop"
+		android:src="@drawable/art"
+		app:layout_constraintBottom_toTopOf="@id/backgr"
+		app:layout_constraintTop_toTopOf="parent" />
+
+
+	<RelativeLayout
+		android:id="@+id/backgr"
+		android:layout_width="match_parent"
+		android:layout_height="260dp"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+	<com.uogames.innowise.ui.customView.CardProfile
+		android:id="@+id/cp_profile"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:src="@drawable/baseline_add_24"
+		app:layout_constraintBottom_toTopOf="@id/cr_recommendation"
+		app:time="6 Days Ago"
+		app:username="Isabella Zhang" />
+
+	<com.uogames.innowise.ui.customView.CardRecommendation
+		android:id="@+id/cr_recommendation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		app:layout_constraintBottom_toBottomOf="parent" />
+
+	<TextView
+		android:id="@+id/tv_event"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="10dp"
+		android:layout_marginEnd="10dp"
+		android:fontFamily="sans-serif"
+		android:shadowColor="@color/black_75"
+		android:shadowRadius="1"
+		android:textAppearance="?attr/textAppearanceHeadlineLarge"
+		android:textFontWeight="600"
+		app:layout_constraintBottom_toTopOf="@id/cp_profile"
+		tools:text="Model winner of 2018 Tokio Art costume design week" />
+
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/ib_back"
+		style="?attr/materialIconButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		app:icon="@drawable/baseline_arrow_back_ios_24"
+		app:iconTint="@color/white"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:tint="@color/white" />
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/btn_menu"
+		style="?attr/materialIconButtonStyle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		app:icon="@drawable/more_horiz_24px"
+		app:iconTint="@color/white"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:tint="@color/white" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
